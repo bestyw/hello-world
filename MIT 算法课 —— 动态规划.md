@@ -27,9 +27,9 @@ O(n2^m) <br>
 > 2、重叠子问题，即一个递归的过程，包含少数独立的子问题，被重复计算了多次 <br>
 
 #### 最优子结构性质
-eg:
-	**if** z = LCS(x, y)，如 z = [1 ... c] 共有 c 个 <br>
-		**then** 任何 z = [1 ... x]  1 <= x < c 为某个 a 的prefix和 b 的prefix的 LCS <br>
+eg:<br>
+**if** z = LCS(x, y)，如 z = [1 ... c] 共有 c 个 <br>
+**then** 任何 z = [1 ... x]  1 <= x < c 为某个 a 的prefix和 b 的prefix的 LCS <br>
 **recursive of LCS**
 ```
 LCS(a, b, i, j):
